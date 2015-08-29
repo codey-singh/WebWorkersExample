@@ -12,8 +12,9 @@ if (window.Worker) {
     myWorker.onmessage = function (e) {
         table.append('<tr><td>' + e.data.hash + '</td><td>' + e.data.result + '</td></tr>');
         result.textContent = "Count : "+Number(Number(e.data.hash) + 1);
-        console.log("Data Recieved from worker");
+        console.log("Data Recieved from work");
     }
+    
 }
 $('#clear').click(function () {
     table.html('<tr><td>#</td><td>Message</td></tr>');
