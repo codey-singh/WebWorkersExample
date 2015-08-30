@@ -40,11 +40,14 @@
 				this.number = number;
 			}
 			function myFunction(dayOfWeek){
-				if(dayOfWeek > 7){
-					throw new ValidationException(123, "New Library exception");
+				try{
+					if(dayOfWeek > 7){
+						throw new ValidationException(123, "New Library exception");
+					}
+				}catch(e){
+					alert (e.number +"  " + e.message);
 				}
 			}
-			
 			myFunction(8);
 		</script>
 	</body>
