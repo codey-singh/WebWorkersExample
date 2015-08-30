@@ -32,5 +32,20 @@
 				</tr>
 			</thead>
 		</table>
+		<script src="js/jquery.js"></script>
+		<script>
+			function ValidationException(number, message){
+				this.message = message;
+				this.name = "My Library Exception";
+				this.number = number;
+			}
+			function myFunction(dayOfWeek){
+				if(dayOfWeek > 7){
+					throw new ValidationException(123, "New Library exception");
+				}
+			}
+			
+			myFunction(8);
+		</script>
 	</body>
 </html>
