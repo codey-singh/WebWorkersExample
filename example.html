@@ -1,40 +1,41 @@
 <html>
-	<head>
-		<title></title>
-	</head>
-	<style>
-		tr:first-of-type, tr:last-of-type{
-			background: skyblue;
-		}
-	</style>
-	<body>
-		<table>
-			<thead>
-				<tr>
-					<th>
-						heading
-					</th>
-				</tr>
-				<tr>
-					<td>
-						First
-					</td>
-				</tr>
-				<tr>
-					<td>
-						Second
-					</td>
-				</tr>
-				<tr>
-					<td>
-						Third
-					</td>
-				</tr>
-			</thead>
-		</table>
-		<script src="js/jquery.js"></script>
-		<script>
-			function ValidationException(number, message){
+<head>
+	<title></title>
+</head>
+<style>
+	tr:first-of-type,
+	tr:last-of-type {
+		background: skyblue;
+	}
+</style>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>
+					heading
+				</th>
+			</tr>
+			<tr>
+				<td>
+					First
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Second
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Third
+				</td>
+			</tr>
+		</thead>
+	</table>
+	<script src="js/jquery.js"></script>
+	<script>
+		function ValidationException(number, message){
 				this.message = message;
 				this.name = "My Library Exception";
 				this.number = number;
@@ -49,6 +50,6 @@
 				}
 			}
 			myFunction(8);
-		</script>
-	</body>
+	</script>
+</body>
 </html>
