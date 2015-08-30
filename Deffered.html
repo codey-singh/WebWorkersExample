@@ -1,0 +1,28 @@
+
+<html>
+  <head>
+   
+    <title></title>
+  </head>
+  <body>
+	  <script src="js/jquery.js"></script>
+	  <script>
+		  $.searchTwitter = function(search){
+			  
+			  $.ajax({
+				  url: "http://search.twitter.com/search.json",
+				  data: {q : search},
+				  dataType: "json",
+				  success : function(result){
+					  console.log(result);
+				  }
+			  });
+			  // return dfd.promise();
+		  };
+		  $.searchTwitter('cats');
+		  // var outer = $.searchTwitter('cats').then(function(results){ 
+			//   console.log(results)
+			// });
+	  </script>
+  </body>
+</html>

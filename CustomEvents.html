@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+  </head>
+  <body>
+<button id="btn" onclick="sayHi()">Click Me</button>
+	  <script>
+		  
+		  elem = document.getElementById("btn");
+		  var event = new Event('build');
+
+			// Listen for the event.
+			elem.addEventListener('build', function (e) { 
+				alert(hi);
+			 }, false);
+			
+			function sayHi(){
+				// Dispatch the event.
+				elem.dispatchEvent(event);
+			}
+			
+	  </script>
+  </body>
+</html>
